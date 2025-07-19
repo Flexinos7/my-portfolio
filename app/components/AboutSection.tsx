@@ -29,13 +29,14 @@ export default function AboutSection() {
               </p>
             </div>
           </div>
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-end lg:pr-16">
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, type: 'spring' }}
               viewport={{ once: true }}
               className="relative"
+              whileHover={{ scale: 1.05 }}
             >
               <motion.div
                 className="absolute -inset-4 rounded-full bg-primary/20 blur-2xl"
@@ -49,7 +50,7 @@ export default function AboutSection() {
                   ease: 'easeInOut',
                 }}
               />
-              <div className="w-72 h-72 rounded-lg shadow-xl overflow-hidden relative z-10">
+              <div className="w-80 h-80 rounded-lg shadow-xl overflow-hidden relative z-10 transition-transform duration-300">
                 <img
                   src="/profile.jpg"
                   alt="Felix Cherian"

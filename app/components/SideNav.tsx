@@ -1,99 +1,51 @@
-'use client';
-
-import { motion, AnimatePresence } from 'framer-motion';
-import { useState, useEffect, useRef } from 'react';
-
-const sections = [
-  { id: 'home', name: 'Home' },
-  { id: 'about', name: 'About Me' },
-  { id: 'skills', name: 'Skills' },
-  { id: 'projects', name: 'Projects' },
-  { id: 'experience', name: 'Experience' },
-  { id: 'education', name: 'Education' },
-  { id: 'contact', name: 'Contact' }
-];
+"use client";
+import { useState } from "react";
+import { sections } from "../data/sections";
+import { useScrollSpy } from "../hooks/useScrollSpy";
 
 export default function SideNav() {
-  const [activeSection, setActiveSection] = useState('home');
-  const [hoveredSection, setHoveredSection] = useState<string | null>(null);
-  const observerRef = useRef<IntersectionObserver | null>(null);
-
-  useEffect(() => {
-    // Create intersection observer
-    observerRef.current = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      {
-        rootMargin: '-50% 0px -50% 0px', // Trigger when section is 50% visible
-        threshold: 0.1
-      }
-    );
-
-    // Observe all sections
-    sections.forEach((section) => {
-      const element = document.getElementById(section.id);
-      if (element && observerRef.current) {
-        observerRef.current.observe(element);
-      }
-    });
-
-    // Cleanup on unmount
-    return () => {
-      if (observerRef.current) {
-        observerRef.current.disconnect();
-      }
-    };
-  }, []);
-
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  const activeSection = useScrollSpy(sections.map(s => s.id), { rootMargin: "-50% 0px -50% 0px" });
+  const [hovered, setHovered] = useState<string | null>(null);
 
   return (
-    <nav className="fixed right-8 top-1/2 transform -translate-y-1/2 z-40">
-      <div className="flex flex-col space-y-4">
-        {sections.map((section) => (
-          <motion.div
+    <nav className="fixed right-8 top-1/2 transform -translate-y-1/2 z-40 flex flex-col space-y-4 max-h-[60vh] overflow-y-auto no-scrollbar">
+      {sections.map((section) => {
+        const isActive = activeSection === section.id;
+        return (
+          <div
             key={section.id}
-            whileHover={{ scale: 1.2 }}
-            className="relative flex items-center"
+            className="relative group flex items-center"
           >
+            {/* Dot */}
             <button
-              onClick={() => scrollToSection(section.id)}
-              onMouseEnter={() => setHoveredSection(section.id)}
-              onMouseLeave={() => setHoveredSection(null)}
-              className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                activeSection === section.id
-                  ? 'bg-primary scale-110'
-                  : 'bg-gray-300 hover:bg-primary'
-              }`}
-              aria-label={section.name}
+              className={`w-4 h-4 rounded-full border-2 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400
+                ${isActive ? "bg-blue-600 border-blue-600 scale-110" : "bg-gray-300 border-gray-400 group-hover:bg-gray-400"}
+              `}
+              onClick={() =>
+                document
+                  .getElementById(section.id)
+                  ?.scrollIntoView({ behavior: "smooth", block: "start" })
+              }
+              aria-label={`Scroll to ${section.label} section`}
+              onMouseEnter={() => setHovered(section.id)}
+              onMouseLeave={() => setHovered(null)}
+              tabIndex={0}
             />
-            <AnimatePresence>
-              {hoveredSection === section.id && (
-                <motion.div
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: 20 }}
-                  transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-                  className="absolute right-6 px-3 py-1 rounded-full bg-white shadow-lg border border-gray-200 text-text whitespace-nowrap"
-                  style={{ pointerEvents: 'none' }}
-                >
-                  <span className="text-sm font-medium">{section.name}</span>
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </motion.div>
-        ))}
-      </div>
+            {/* Sliding Label */}
+            <div
+              className={`pointer-events-none absolute right-full mr-2
+                opacity-0 translate-x-2 group-hover:opacity-100 group-hover:translate-x-0
+                transition-all duration-200
+                bg-white/30 backdrop-blur-md border border-white/50
+                rounded-full px-3 py-1 text-sm text-black
+                ${isActive || hovered === section.id ? "opacity-100 translate-x-0" : ""}
+              `}
+            >
+              {section.label}
+            </div>
+          </div>
+        );
+      })}
     </nav>
   );
 } 

@@ -4,14 +4,14 @@ import { motion } from 'framer-motion';
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-text">
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
               Building Digital Experiences
             </h2>
-            <div className="prose prose-lg text-gray-800 space-y-4">
+            <div className="prose prose-lg text-white space-y-4">
               <p>
                 I'm a passionate aspiring Product Manager with a strong foundation in technology and user experience. 
                 My journey in the tech world has been driven by a desire to create meaningful solutions that address 

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -13,10 +13,10 @@ export default function ContactSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-text mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Let's <span className="text-primary">Connect</span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-white max-w-2xl mx-auto">
             I'm always open to discussing new opportunities, collaborations, or just having a great conversation about product and technology.
           </p>
         </motion.div>
@@ -31,8 +31,8 @@ export default function ContactSection() {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-semibold text-text mb-6">Get In Touch</h3>
-              <p className="text-gray-600 mb-8 leading-relaxed">
+              <h3 className="text-2xl font-semibold text-white mb-6">Get In Touch</h3>
+              <p className="text-white mb-8 leading-relaxed">
                 Whether you have a project in mind, want to discuss product strategy, or just want to say hello, I'd love to hear from you.
               </p>
             </div>
@@ -80,12 +80,12 @@ export default function ContactSection() {
                   transition={{ duration: 0.4, delay: 0.4 + index * 0.1 }}
                   viewport={{ once: true }}
                   whileHover={{ scale: 1.02 }}
-                  className="flex items-center space-x-4 p-4 rounded-lg hover:bg-gray-50 transition-colors duration-200"
+                  className="flex items-center space-x-4 p-4 rounded-lg transition-colors duration-200 bg-white/10 hover:bg-black/60 hover:backdrop-blur-lg text-white"
                 >
                   <div className="text-primary">{contact.icon}</div>
                   <div>
-                    <h4 className="font-semibold text-text">{contact.title}</h4>
-                    <p className="text-gray-600">{contact.content}</p>
+                    <h4 className="font-semibold text-white">{contact.title}</h4>
+                    <p className="text-white">{contact.content}</p>
                   </div>
                 </motion.a>
               ))}
@@ -98,45 +98,45 @@ export default function ContactSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="bg-gray-50 p-8 rounded-xl"
+            className="bg-white/20 dark:bg-black/20 backdrop-blur-xl border border-white/30 dark:border-black/30 p-8 rounded-xl"
           >
-            <h3 className="text-2xl font-semibold text-text mb-6">Send a Message</h3>
+            <h3 className="text-2xl font-semibold text-white mb-6">Send a Message</h3>
             <form className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-text mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
                   Name
                 </label>
                 <input
                   type="text"
                   id="name"
                   name="name"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200 text-black"
                   placeholder="Your name"
                 />
               </div>
               
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-text mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
                   Email
                 </label>
                 <input
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200 text-black"
                   placeholder="your.email@example.com"
                 />
               </div>
               
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-text mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
                   Message
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   rows={4}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200 resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200 resize-none placeholder-white/60 text-black"
                   placeholder="Tell me about your project or just say hello!"
                 ></textarea>
               </div>
@@ -145,7 +145,7 @@ export default function ContactSection() {
                 type="submit"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full bg-primary hover:bg-primary/90 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200"
+                className="w-full bg-blue-400 hover:bg-blue-500 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200"
               >
                 Send Message
               </motion.button>

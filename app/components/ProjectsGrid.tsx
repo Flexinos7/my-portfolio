@@ -22,14 +22,14 @@ export default function ProjectsGrid() {
       title: 'DecorFeva – In Progress',
       description: 'An app uniting clients, decorators, and vendors to streamline wedding décor planning.',
       tags: ['React', 'Next.js', 'Tailwind'],
-      codeUrl: 'https://github.com/felixcherian/decorfeva'
+      // codeUrl: 'https://github.com/felixcherian/decorfeva'
     }
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gray-50">
+    <section id="projects" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-text mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
           Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">

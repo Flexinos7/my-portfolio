@@ -35,7 +35,7 @@ const experiences = [
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="py-20 bg-white">
+    <section id="experience" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -44,10 +44,10 @@ export default function ExperienceSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-text mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Professional <span className="text-primary">Experience</span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-white max-w-2xl mx-auto">
             A diverse journey combining product management, event coordination, and community leadership.
           </p>
         </motion.div>
@@ -60,10 +60,10 @@ export default function ExperienceSection() {
             {experiences.map((experience, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 + index * 0.1, ease: "easeOut" }}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
+                transition={{ type: 'spring', stiffness: 120, damping: 20 }}
                 className={`relative flex items-start ${
                   index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
                 }`}
@@ -75,28 +75,30 @@ export default function ExperienceSection() {
                 <div className={`ml-16 md:ml-0 md:w-5/12 ${
                   index % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'
                 }`}>
-                  <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                    <div className="flex items-center justify-between mb-3">
-                      <h3 className="text-xl font-semibold text-text">{experience.title}</h3>
-                      <span className="text-sm text-primary font-medium">{experience.period}</span>
+                  <motion.div
+                    className="max-w-[350px] w-full p-6 bg-white/10 backdrop-blur-lg border border-white/30 rounded-2xl shadow-xl flex flex-col justify-between space-y-4"
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ type: 'spring', stiffness: 120, damping: 20 }}
+                  >
+                    <div className="flex items-center justify-between mb-1">
+                      <h3 className="text-xl md:text-2xl font-semibold leading-tight text-white">{experience.title}</h3>
+                      <span className="text-sm text-white font-medium">{experience.period}</span>
                     </div>
-                    <p className="text-lg font-medium text-gray-700 mb-2">{experience.company}</p>
-                    <p className="text-gray-600 mb-4 leading-relaxed">{experience.description}</p>
-                    <div className="flex flex-wrap gap-2">
-                      {experience.skills.map((skill, skillIndex) => (
-                        <motion.span
+                    <p className="text-lg font-medium text-white mb-1 break-words whitespace-normal">{experience.company}</p>
+                    <p className="text-white break-words whitespace-normal leading-relaxed">{experience.description}</p>
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {experience.skills.map((skill) => (
+                        <span
                           key={skill}
-                          initial={{ opacity: 0, scale: 0.8 }}
-                          whileInView={{ opacity: 1, scale: 1 }}
-                          transition={{ duration: 0.3, delay: 0.4 + index * 0.1 + skillIndex * 0.05 }}
-                          viewport={{ once: true }}
-                          className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full font-medium"
+                          className="rounded-full bg-gray-500/50 text-blue-400 px-4 py-1 font-semibold"
                         >
                           {skill}
-                        </motion.span>
+                        </span>
                       ))}
                     </div>
-                  </div>
+                  </motion.div>
                 </div>
               </motion.div>
             ))}

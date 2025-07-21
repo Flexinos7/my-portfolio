@@ -21,17 +21,17 @@ export default function ProjectCard({
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
-      className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ type: 'spring', stiffness: 120, damping: 15 }}
+      className="bg-white/20 dark:bg-black/20 backdrop-blur-xl border border-white/30 dark:border-black/30 rounded-3xl shadow-2xl p-8 relative overflow-hidden"
     >
-      <h3 className="text-2xl font-semibold mb-2 text-text">{title}</h3>
-      <p className="text-gray-700 mb-4">{description}</p>
+      <h3 className="text-2xl font-semibold mb-2 text-white">{title}</h3>
+      <p className="text-white mb-4">{description}</p>
       <div className="flex flex-wrap gap-2 mb-6">
         {tags.map((tag) => (
           <span
             key={tag}
-            className="inline-block bg-primary/20 text-primary px-3 py-1 rounded-full text-sm mr-2 font-medium"
+            className="rounded-full bg-gray-500/50 text-blue-400 px-4 py-1 font-semibold"
           >
             {tag}
           </span>
@@ -43,7 +43,7 @@ export default function ProjectCard({
             href={codeUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-primary text-primary px-4 py-2 rounded-lg font-medium text-sm transition-colors hover:bg-primary/10"
+            className="bg-black/60 backdrop-blur text-white px-4 py-2 rounded-lg font-medium text-sm transition-colors border border-white/20 hover:bg-black/80"
           >
             Code
           </a>
@@ -53,7 +53,7 @@ export default function ProjectCard({
             href={liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-primary text-white px-4 py-2 rounded-lg font-medium text-sm transition-colors hover:bg-primary/90"
+            className="bg-white text-black px-4 py-2 rounded-lg font-medium text-sm transition-colors hover:bg-gray-100"
           >
             View
           </a>

@@ -15,7 +15,7 @@ const education = [
 
 export default function EducationSection() {
   return (
-    <section id="education" className="py-20 bg-gray-50">
+    <section id="education" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -24,10 +24,10 @@ export default function EducationSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-text mb-4">
-            <span className="text-primary">Education</span> & Achievements
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Education & Achievements
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-white max-w-2xl mx-auto">
             A strong academic foundation combined with hands-on experience and leadership roles.
           </p>
         </motion.div>
@@ -40,35 +40,31 @@ export default function EducationSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 + index * 0.1, ease: "easeOut" }}
               viewport={{ once: true }}
-              className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300"
+              className="bg-white/20 dark:bg-black/20 backdrop-blur-xl border border-white/30 dark:border-black/30 rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 text-white"
             >
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                 <div>
-                  <h3 className="text-2xl font-semibold text-text mb-2">{item.degree}</h3>
-                  <p className="text-lg text-primary font-medium">{item.school}</p>
+                  <h3 className="text-2xl font-semibold text-white mb-2">{item.degree}</h3>
+                  <p className="text-lg text-white font-medium">{item.school}</p>
                 </div>
                 <div className="mt-4 md:mt-0 text-right">
-                  <p className="text-sm text-gray-600">{item.period}</p>
-                  <p className="text-lg font-semibold text-primary">{item.gpa} GPA</p>
+                  <p className="text-sm text-white">{item.period}</p>
+                  <p className="text-lg font-semibold text-white">{item.gpa} GPA</p>
                 </div>
               </div>
               
-              <p className="text-gray-600 mb-6 leading-relaxed">{item.description}</p>
+              <p className="text-white mb-6 leading-relaxed">{item.description}</p>
               
               <div>
-                <h4 className="text-lg font-semibold text-text mb-3">Key Achievements</h4>
-                <div className="flex flex-wrap gap-2">
-                  {item.achievements.map((achievement, achievementIndex) => (
-                    <motion.span
+                <h4 className="text-lg font-semibold text-white mb-3">Key Achievements</h4>
+                <div className="flex flex-wrap gap-2 mt-2">
+                  {item.achievements.map((achievement) => (
+                    <span
                       key={achievement}
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 0.3, delay: 0.4 + index * 0.1 + achievementIndex * 0.05 }}
-                      viewport={{ once: true }}
-                      className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full font-medium"
+                      className="rounded-full bg-gray-500/50 text-blue-400 px-4 py-1 font-semibold"
                     >
                       {achievement}
-                    </motion.span>
+                    </span>
                   ))}
                 </div>
               </div>

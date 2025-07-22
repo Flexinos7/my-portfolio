@@ -74,7 +74,7 @@ export default function About() {
               className="font-body text-lg md:text-xl text-gray-600 leading-relaxed"
               variants={textVariants}
             >
-              I'm Felix Cherian, a passionate student and aspiring Product Manager who thrives at the intersection of technology, design, and business. I love creating thoughtful digital products that solve real problems and make a meaningful impact on users' lives.
+              I&apos;m Felix Cherian, a passionate student and aspiring Product Manager who thrives at the intersection of technology, design, and business. I love creating thoughtful digital products that solve real problems and make a meaningful impact on users&apos; lives.
             </motion.p>
 
             <motion.p 

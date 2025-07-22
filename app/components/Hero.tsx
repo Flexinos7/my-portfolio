@@ -15,7 +15,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="gsap-hero-title text-7xl tracking-tight bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 text-transparent h-20 font-semibold mb-4"
         >
-          Hello, I'm Felix Cherian
+          Hello, I&apos;m Felix Cherian
         </motion.h1>
         <motion.p
           initial={{ y: 20, opacity: 0 }}

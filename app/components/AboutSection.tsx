@@ -13,17 +13,17 @@ export default function AboutSection() {
             </h2>
             <div className="prose prose-lg text-white space-y-4">
               <p>
-                I'm a passionate Digital Product Manager with a strong foundation in technology and user experience. 
+                I&apos;m a passionate Digital Product Manager with a strong foundation in technology and user experience. 
                 My journey in the tech world has been driven by a desire to create meaningful solutions that address 
                 real user needs, especially ones that align with my passions.
               </p>
               <p>
                 With experience in both development and product thinking, I bridge the gap between technical 
                 implementation and user-centered design. I believe that the best products are built when we 
-                deeply understand the problems we're solving and the people we're solving them for.
+                deeply understand the problems we&apos;re solving and the people we&apos;re solving them for.
               </p>
               <p>
-              When I'm not working on projects, you can find me exploring new places,
+              When I&apos;m not working on projects, you can find me exploring new places,
                going to the gym, playing sports, or going to social events. 
                These type of adventures recharge me, which allow me to fuel ideas for my ideas to 
                create products.

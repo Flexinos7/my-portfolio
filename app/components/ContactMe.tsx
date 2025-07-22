@@ -14,7 +14,7 @@ export default function ContactMe() {
         >
           <h2 className="text-3xl font-bold text-text mb-4">Get In Touch</h2>
           <p className="text-lg text-gray-600 mb-8">
-            I'm always open to discussing new opportunities and collaborations.
+            I&apos;m always open to discussing new opportunities and collaborations.
           </p>
           <a
             href="mailto:you@example.com"

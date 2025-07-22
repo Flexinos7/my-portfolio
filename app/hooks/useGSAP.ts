@@ -7,19 +7,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 export function useGSAP() {
   useEffect(() => {
-    const sections = gsap.utils.toArray(".gsap-section");
+    // Cast each matched node to an HTMLElement so GSAP knows the target type
+    const sections = gsap.utils.toArray<HTMLElement>(".gsap-section");
     sections.forEach((section) => {
       gsap.from(section, {
         opacity: 0,
         y: 50,
         duration: 1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: section,
-          start: "top 80%",
-          end: "bottom 20%",
-          toggleActions: "play none none reverse",
-        },
       });
     });
 

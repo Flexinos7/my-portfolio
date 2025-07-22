@@ -8,14 +8,14 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-white">
-              Building Digital Experiences
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-400">
+              Delivering Meaningful Interactions
             </h2>
             <div className="prose prose-lg text-white space-y-4">
               <p>
-                I'm a passionate aspiring Product Manager with a strong foundation in technology and user experience. 
+                I'm a passionate Digital Product Manager with a strong foundation in technology and user experience. 
                 My journey in the tech world has been driven by a desire to create meaningful solutions that address 
-                real user needs.
+                real user needs, especially ones that align with my passions.
               </p>
               <p>
                 With experience in both development and product thinking, I bridge the gap between technical 
@@ -23,9 +23,10 @@ export default function AboutSection() {
                 deeply understand the problems we're solving and the people we're solving them for.
               </p>
               <p>
-                When I'm not working on projects, you can find me exploring new technologies, reading about 
-                product strategy, or collaborating with other developers and designers to bring innovative 
-                ideas to life.
+              When I'm not working on projects, you can find me exploring new places,
+               going to the gym, playing sports, or going to social events. 
+               These type of adventures recharge me, which allow me to fuel ideas for my ideas to 
+               create products.
               </p>
             </div>
           </div>

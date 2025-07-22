@@ -23,7 +23,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-xl md:text-2xl bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 text-transparent mb-4"
         >
-          Aspiring Product Manager
+          Digital Product Manager
         </motion.p>
         <motion.p
           initial={{ y: 20, opacity: 0 }}
@@ -51,7 +51,7 @@ export default function Hero() {
             </svg>
           </motion.a>
           <motion.a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/felix-cherian/"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}
@@ -62,7 +62,7 @@ export default function Hero() {
             </svg>
           </motion.a>
           <motion.a
-            href="mailto:you@example.com"
+            href="mailto:felixcherianuta@gmail.com"
             whileHover={{ scale: 1.1 }}
             className="text-white hover:text-primary transition-colors duration-200"
           >

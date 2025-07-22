@@ -43,7 +43,7 @@ export default function SideNav() {
             >
               {section.label}
             </div>
-          </div>
+      </div>
         );
       })}
     </nav>

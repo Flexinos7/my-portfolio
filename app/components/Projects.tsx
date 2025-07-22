@@ -13,7 +13,7 @@ const projects = [
   },
   {
     name: "Jurassic Parking",
-    description: "An application using AI object detection to help students, employees, and organizations make smarter, faster decisions.",
+    description: "An application using AI object detection to help make smarter, faster parking decisions.",
     tech: ["React", "Next.js", "Tailwind"],
     github: "https://github.com/charlesroy7/RowdyHacks",
     live: "https://devpost.com/software/jurassic-parking",

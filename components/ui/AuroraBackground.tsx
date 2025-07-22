@@ -1,6 +1,7 @@
 "use client";
 import React, { ReactNode } from "react";
 import { cn } from "@/lib/utils";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 interface AuroraBackgroundProps extends React.HTMLProps<HTMLDivElement> {
   children: ReactNode;
@@ -13,6 +14,9 @@ export const AuroraBackground = ({
   showRadialGradient = true,
   ...props
 }: AuroraBackgroundProps) => {
+  // Add scroll-based opacity for black overlay
+  const { scrollYProgress } = useScroll();
+  const overlayOpacity = useTransform(scrollYProgress, [0, 1], [0, 0.5]);
   return (
     <main>
       <div className={cn("relative w-full min-h-screen", className)} {...props}>
@@ -23,16 +27,16 @@ export const AuroraBackground = ({
           className="fixed inset-0 -z-20 overflow-hidden"
           style={{
             "--aurora":
-              "repeating-linear-gradient(120deg,#38bdf8_0%,#818cf8_20%,#f472b6_40%,#fde68a_60%)",
+              "repeating-linear-gradient(120deg,#1e3a8a_0%,#312e81_25%,#7c3aed_50%,#db2777_75%,#0ea5e9_100%)",
             "--dark-gradient":
               "repeating-linear-gradient(100deg,#000_0%,#000_7%,transparent_10%,transparent_12%,#000_16%)",
             "--white-gradient":
               "repeating-linear-gradient(100deg,#fff_0%,#fff_7%,transparent_10%,transparent_12%,#fff_16%)",
-            "--blue-300": "#93c5fd",
-            "--blue-400": "#60a5fa",
-            "--blue-500": "#3b82f6",
-            "--indigo-300": "#a5b4fc",
-            "--violet-200": "#ddd6fe",
+            "--blue-300": "#2563eb",
+            "--blue-400": "#1e40af",
+            "--blue-500": "#312e81",
+            "--indigo-300": "#7c3aed",
+            "--violet-200": "#a21caf",
             "--black": "#000",
             "--white": "#fff",
             "--transparent": "transparent",
@@ -46,7 +50,12 @@ export const AuroraBackground = ({
             )}
           ></div>
           {/* Softer black tint overlay above aurora, below content */}
-          <div className="absolute inset-0 bg-black/50 pointer-events-none z-10" />
+          <div className="absolute inset-0 bg-black/30 pointer-events-none z-10" />
+          {/* Scroll-based black fade overlay */}
+          <motion.div
+            className="fixed inset-0 pointer-events-none z-20"
+            style={{ background: "#000", opacity: overlayOpacity }}
+          />
         </div>
         {/* Content above backgrounds */}
         <div className="relative z-10">

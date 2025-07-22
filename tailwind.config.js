@@ -13,7 +13,7 @@ module.exports = {
   theme: {
   	extend: {
 		animation: {
-			aurora: "aurora 30s ease-in-out infinite alternate",
+			aurora: "aurora 15s ease-in-out infinite alternate",
 		  },
 		  keyframes: {
 			aurora: {

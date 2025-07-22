@@ -38,25 +38,39 @@ export default function ProjectCard({
         ))}
       </div>
       <div className="flex gap-3">
-        {codeUrl && (
-          <a
-            href={codeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-black/60 backdrop-blur text-white px-4 py-2 rounded-lg font-medium text-sm transition-colors border border-white/20 hover:bg-black/80"
-          >
-            Code
-          </a>
-        )}
-        {liveUrl && (
+        {(title === 'Jurassic Parking' || title === 'MavGrades') && liveUrl ? (
           <a
             href={liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white text-black px-4 py-2 rounded-lg font-medium text-sm transition-colors hover:bg-gray-100"
+            className="bg-blue-400 text-white px-6 py-3 rounded-xl font-bold text-lg w-full text-center transition-colors hover:bg-blue-500"
+            style={{ display: 'block' }}
           >
             View
           </a>
+        ) : (
+          <>
+            {codeUrl && (
+              <a
+                href={codeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-black/60 backdrop-blur text-white px-4 py-2 rounded-lg font-medium text-sm transition-colors border border-white/20 hover:bg-black/80"
+              >
+                Code
+              </a>
+            )}
+            {liveUrl && (
+              <a
+                href={liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-black px-4 py-2 rounded-lg font-medium text-sm transition-colors hover:bg-gray-100"
+              >
+                View
+              </a>
+            )}
+          </>
         )}
       </div>
     </motion.div>

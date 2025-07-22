@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const education = [
   {
-    degree: 'Bachelor of Science in Information Systems',
+    degree: 'Bachelor of Science in Computer Information Systems',
     school: 'University of Texas at Arlington',
     period: 'Expected May 2026',
     gpa: '3.0/4.0',
@@ -24,7 +24,7 @@ export default function EducationSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-400 mb-4">
             Education & Achievements
           </h2>
           <p className="text-lg text-white max-w-2xl mx-auto">
@@ -42,16 +42,15 @@ export default function EducationSection() {
               viewport={{ once: true }}
               className="bg-white/20 dark:bg-black/20 backdrop-blur-xl border border-white/30 dark:border-black/30 rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 text-white"
             >
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                <div>
-                  <h3 className="text-2xl font-semibold text-white mb-2">{item.degree}</h3>
-                  <p className="text-lg text-white font-medium">{item.school}</p>
-                </div>
-                <div className="mt-4 md:mt-0 text-right">
-                  <p className="text-sm text-white">{item.period}</p>
-                  <p className="text-lg font-semibold text-white">{item.gpa} GPA</p>
-                </div>
+              <div className="flex flex-row items-baseline justify-between mb-2">
+                <h3 className="text-2xl font-semibold text-white">
+                  {item.degree}
+                </h3>
+                <p className="text-sm text-white whitespace-nowrap ml-4">
+                  {item.period}
+                </p>
               </div>
+              <p className="text-lg text-white font-medium mb-2">{item.school}</p>
               
               <p className="text-white mb-6 leading-relaxed">{item.description}</p>
               

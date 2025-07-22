@@ -44,8 +44,8 @@ export default function ExperienceSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Professional <span className="text-primary">Experience</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-400 mb-4">
+            Professional Experience
           </h2>
           <p className="text-lg text-white max-w-2xl mx-auto">
             A diverse journey combining product management, event coordination, and community leadership.

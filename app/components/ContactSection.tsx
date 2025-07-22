@@ -13,8 +13,8 @@ export default function ContactSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Let's <span className="text-primary">Connect</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-400 mb-4">
+            Let's Connect
           </h2>
           <p className="text-lg text-white max-w-2xl mx-auto">
             I'm always open to discussing new opportunities, collaborations, or just having a great conversation about product and technology.

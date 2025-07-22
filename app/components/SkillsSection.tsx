@@ -33,8 +33,8 @@ export default function SkillsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Skills & <span className="text-primary">Expertise</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-400 mb-4">
+            Skills & Expertise
           </h2>
           <p className="text-lg text-white max-w-2xl mx-auto">
             A diverse skill set combining technical development, product management, and user-centered design principles.

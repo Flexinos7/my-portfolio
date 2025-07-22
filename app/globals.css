@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+
 :root {
   --color-primary: theme('colors.blue.400');
   --color-text: #171717;

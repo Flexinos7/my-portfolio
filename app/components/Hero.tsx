@@ -6,7 +6,7 @@ export default function Hero() {
   const yMove = useTransform(scrollY, [0, 300], [0, 50]);
 
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="flex flex-col-reverse md:flex-row items-center md:items-start px-4 md:px-16 py-12">
       <div className="relative z-10 flex flex-col items-center justify-center h-full">
         {/* Profile image intentionally omitted */}
         <motion.h1

@@ -23,23 +23,24 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <Head>
-        <title>Felix Cherian - Portfolio</title>
-        {/* SEO */}
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Felix Cherian - Aspiring Product Manager. View my portfolio, projects, resume, and more." />
-        <meta name="robots" content="index, follow" />
-        {/* Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Felix Cherian - Portfolio" />
-        <meta property="og:description" content="Check out Felix’s product management projects and tech portfolio." />
-        <meta property="og:image" content={`${process.env.NEXT_PUBLIC_SITE_URL || "https://felixcherian.com"}/og-image.jpg`} />
-        <meta property="og:url" content={process.env.NEXT_PUBLIC_SITE_URL || "https://felixcherian.com"} />
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Felix Cherian - Portfolio" />
-        <meta name="twitter:description" content="Check out Felix’s product management projects and tech portfolio." />
-        <meta name="twitter:image" content={`${process.env.NEXT_PUBLIC_SITE_URL || "https://felixcherian.com"}/og-image.jpg`} />
+        <title>Felix Cherian — Digital Product Manager & Portfolio</title>
+        <meta name="description" content="Portfolio of Felix Cherian — product management, UX, and software projects." />
+        <link rel="canonical" href="https://felixcherian.com" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Felix Cherian",
+              "url": "https://felixcherian.com",
+              "jobTitle": "Digital Product Manager",
+              "sameAs": [
+                "https://www.linkedin.com/in/felixcherian",
+                "https://github.com/FelixCherian"
+              ]
+            }
+          `}
+        </script>
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
       </Head>

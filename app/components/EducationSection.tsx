@@ -42,8 +42,10 @@ export default function EducationSection() {
               viewport={{ once: true }}
               className="bg-white/20 dark:bg-black/20 backdrop-blur-xl border border-white/30 dark:border-black/30 rounded-xl shadow-lg p-4 sm:p-6 hover:shadow-xl transition-shadow duration-300 text-white"
             >
-              <h3 className="text-lg sm:text-xl font-semibold leading-snug">{item.degree}</h3>
-              <p className="text-sm sm:text-base text-gray-300 mt-1">{item.period}</p>
+              <div className="flex flex-wrap items-center justify-between">
+                <h3 className="text-lg sm:text-xl font-semibold max-w-[60%]">{item.degree}</h3>
+                <span className="text-sm sm:text-base text-gray-400 mt-2 sm:mt-0">{item.period}</span>
+              </div>
               <p className="text-lg text-white font-medium mb-2">{item.school}</p>
               
               <p className="text-white mb-6 leading-relaxed">{item.description}</p>

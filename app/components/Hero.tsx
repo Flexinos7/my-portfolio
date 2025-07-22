@@ -13,7 +13,7 @@ export default function Hero() {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="gsap-hero-title text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-tight text-center md:text-left max-w-full tracking-tight bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 text-transparent font-semibold mb-4"
+          className="gsap-hero-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight text-center md:text-left max-w-full tracking-tight bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 text-transparent font-semibold mb-4"
         >
           Hello, I&apos;m <br className="block md:hidden" />
           Felix Cherian
@@ -30,7 +30,7 @@ export default function Hero() {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-lg text-white mb-8 max-w-2xl mx-auto"
+          className="text-base sm:text-lg text-white mb-8 max-w-2xl mx-auto text-center sm:text-left"
         >
           Creating real-world solutions with user needs at the forefront
         </motion.p>

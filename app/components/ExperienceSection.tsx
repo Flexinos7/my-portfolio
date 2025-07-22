@@ -83,8 +83,10 @@ export default function ExperienceSection() {
                     transition={{ type: 'spring', stiffness: 120, damping: 20 }}
                   >
                     <div className="flex items-center justify-between mb-1">
-                      <h3 className="text-xl md:text-2xl font-semibold leading-tight text-white">{experience.title}</h3>
-                      <span className="text-sm text-white font-medium">{experience.period}</span>
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 w-full">
+                        <h3 className="text-lg sm:text-xl font-semibold leading-tight text-white">{experience.title}</h3>
+                        <span className="text-sm sm:text-base text-gray-400 mt-1 sm:mt-0">{experience.period}</span>
+                      </div>
                     </div>
                     <p className="text-lg font-medium text-white mb-1 break-words whitespace-normal">{experience.company}</p>
                     <p className="text-white break-words whitespace-normal leading-relaxed">{experience.description}</p>

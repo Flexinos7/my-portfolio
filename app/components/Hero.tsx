@@ -6,16 +6,17 @@ export default function Hero() {
   const yMove = useTransform(scrollY, [0, 300], [0, 50]);
 
   return (
-    <section className="flex flex-col-reverse md:flex-row items-center md:items-start px-4 md:px-16 py-12">
+    <section className="relative h-screen overflow-hidden">
       <div className="relative z-10 flex flex-col items-center justify-center h-full">
         {/* Profile image intentionally omitted */}
         <motion.h1
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="gsap-hero-title text-7xl tracking-tight bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 text-transparent h-20 font-semibold mb-4"
+          className="gsap-hero-title text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-tight text-center md:text-left max-w-full tracking-tight bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 text-transparent font-semibold mb-4"
         >
-          Hello, I&apos;m Felix Cherian
+          Hello, I&apos;m <br className="block md:hidden" />
+          Felix Cherian
         </motion.h1>
         <motion.p
           initial={{ y: 20, opacity: 0 }}

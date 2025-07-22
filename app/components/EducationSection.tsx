@@ -40,16 +40,10 @@ export default function EducationSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 + index * 0.1, ease: "easeOut" }}
               viewport={{ once: true }}
-              className="bg-white/20 dark:bg-black/20 backdrop-blur-xl border border-white/30 dark:border-black/30 rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 text-white"
+              className="bg-white/20 dark:bg-black/20 backdrop-blur-xl border border-white/30 dark:border-black/30 rounded-xl shadow-lg p-4 sm:p-6 hover:shadow-xl transition-shadow duration-300 text-white"
             >
-              <div className="flex flex-row items-baseline justify-between mb-2">
-                <h3 className="text-2xl font-semibold text-white">
-                  {item.degree}
-                </h3>
-                <p className="text-sm text-white whitespace-nowrap ml-4">
-                  {item.period}
-                </p>
-              </div>
+              <h3 className="text-lg sm:text-xl font-semibold leading-snug">{item.degree}</h3>
+              <p className="text-sm sm:text-base text-gray-300 mt-1">{item.period}</p>
               <p className="text-lg text-white font-medium mb-2">{item.school}</p>
               
               <p className="text-white mb-6 leading-relaxed">{item.description}</p>

@@ -18,7 +18,12 @@ export default function ProjectsGrid() {
       codeUrl: 'https://github.com/felixcherian/jurassic-parking',
       liveUrl: 'https://devpost.com/software/jurassic-parking'
     },
-  
+    {
+      title: 'Internal IT Ticketing System',
+      description: 'A role-based internal IT ticketing platform designed to streamline support workflows with ticket tracking, approvals, notifications, and role-based access control.',
+      tags: ['React', 'Material UI', 'Vite', 'Systems Analysis'],
+      liveUrl: '/IT_Ticketing_System_Report.pdf'
+    },
   ];
 
   return (
@@ -27,6 +32,7 @@ export default function ProjectsGrid() {
         <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-400 mb-12">
           Projects
         </h2>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
           {projects.map((project, index) => (
             <ProjectCard

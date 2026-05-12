@@ -38,7 +38,9 @@ export default function ProjectCard({
         ))}
       </div>
       <div className="flex gap-3">
-        {(title === 'Jurassic Parking' || title === 'MavGrades') && liveUrl ? (
+        {(title === 'Jurassic Parking' ||
+          title === 'MavGrades' ||
+          title === 'Internal IT Ticketing System') && liveUrl ? (
           <a
             href={liveUrl}
             target="_blank"

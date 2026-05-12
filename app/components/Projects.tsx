@@ -18,6 +18,14 @@ const projects = [
     github: "https://github.com/charlesroy7/RowdyHacks",
     live: "https://devpost.com/software/jurassic-parking",
   },
+  {
+    name: "Internal IT Ticketing System",
+    description:
+      "A role-based internal IT ticketing platform designed to streamline support workflows with ticket tracking, approvals, notifications, and role-based access control.",
+    tech: ["React", "Material UI", "Vite", "Systems Analysis"],
+    github: "",
+    live: "/IT_Ticketing_System_Report.pdf",
+  },
   
 ];
 

@@ -1,10 +1,7 @@
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Hero() {
-  const { scrollY } = useScroll();
-  const yMove = useTransform(scrollY, [0, 300], [0, 50]);
-
   return (
     <section className="relative h-screen overflow-hidden">
       <div className="relative z-10 flex flex-col items-center justify-center h-full">
@@ -24,7 +21,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-xl md:text-2xl bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 text-transparent mb-4"
         >
-          Digital Product Manager
+          Technology Consultant & Product Builder
         </motion.p>
         <motion.p
           initial={{ y: 20, opacity: 0 }}

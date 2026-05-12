@@ -4,34 +4,39 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
-    title: 'Product Manager',
-    company: 'MavGrades.com',
-    period: 'Jul 2024 - Present',
-    description: 'Leading product development for a platform that helps UTA students view grade distributions by course and professor.',
-    skills: ['Product Strategy', 'User Research', 'Data Analysis', 'Agile Development']
-  },
-  {
-    title: 'Wedding Decorator Lead',
-    company: 'Alpha Events & Decor',
-    period: 'May 2021 - Present',
-    description: 'Managed wedding decoration projects, coordinated with clients and vendors, and ensured successful event execution.',
-    skills: ['Project Management', 'Client Relations', 'Vendor Coordination', 'Event Planning']
-  },
-  {
-    title: 'Executive Director',
-    company: 'Association of Computing Machinery (ACM)',
-    period: 'Jan 2024 - Present',
-    description: 'Leading the creative technology community at UTA, organizing events and fostering innovation.',
-    skills: ['Leadership', 'Event Organization', 'Community Building', 'Technology']
+    title: 'AI Evaluation Analyst (Contract)',
+    company: 'Mercor',
+    period: 'Aug 2025 – Jan 2026',
+    description:
+      'Evaluated and analyzed multimodal AI outputs across image, audio, and video datasets to assess model performance, alignment, and response accuracy against business-defined criteria while supporting AI model optimization initiatives.',
+    skills: ['AI Evaluation', 'Data Analysis', 'Quality Assurance', 'Cross-Functional Collaboration'],
   },
   {
     title: 'Organizer',
     company: 'HackUTA',
-    period: 'Jan 2024 - Present',
-    description: 'Organizing hackathons and coding events to promote innovation and collaboration among students.',
-    skills: ['Event Planning', 'Student Engagement', 'Technical Events', 'Collaboration']
-  }
+    period: 'Aug 2025 – May 2026',
+    description:
+      'Supported planning and execution of large-scale hackathons by coordinating logistics, participant experiences, and collaborative event operations focused on innovation and student engagement.',
+    skills: ['Event Planning', 'Team Collaboration', 'Operations', 'Student Engagement'],
+  },
+  {
+    title: 'Executive Director',
+    company: 'Association for Computing Machinery (ACM)',
+    period: 'Jan 2024 – May 2026',
+    description:
+      'Led strategic technology and community initiatives by coordinating collaboration between engineering, design, and operations teams while driving engagement through data-driven outreach strategies.',
+    skills: ['Leadership', 'Product Strategy', 'Community Building', 'Cross-Functional Collaboration'],
+  },
+  {
+    title: 'Event Planner',
+    company: 'Alpha Events & Decor',
+    period: 'Jan 2021 – May 2025',
+    description:
+      'Led digital transformation initiatives by coordinating development of an online wedding décor portal, collaborating with stakeholders to define business requirements and improve operational workflows across 450+ events.',
+    skills: ['Project Management', 'Stakeholder Communication', 'Process Improvement', 'Operations'],
+  },
 ];
+
 
 export default function ExperienceSection() {
   return (

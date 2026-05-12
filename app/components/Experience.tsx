@@ -3,24 +3,32 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    company: "Alpha Events and Decor",
-    role: "Wedding Decorator Lead, Website Developer",
-    dates: "May 2021 – Present",
-    points: [
-      "Planned roadmap aligning teams, boosting inquiries by 30%.",
-      "Managed 500+ events, delivering 100% on-time, on-budget.",
-      "Developed and deployed a full-featured wedding decor site"
-    ],
+    company: "Mercor",
+    role: "AI Evaluation Analyst (Contract)",
+    dates: "August 2025 – January 2026",
+    description:
+      "Evaluated and analyzed multimodal AI outputs across image, audio, and video datasets to assess model performance, alignment, and response accuracy against business-defined criteria. Conducted high-volume data annotation and quality assurance workflows supporting AI model optimization and fine-tuning initiatives while communicating actionable insights to cross-functional AI teams.",
   },
   {
-    company: "ACM at UTA",
+    company: "Alpha Events and Decor",
+    role: "Event Planner",
+    dates: "January 2021 – May 2025",
+    description:
+      "Led digital transformation initiatives by coordinating development of an online wedding décor portal, collaborating with stakeholders to define business requirements and launch milestones that increased web-based inquiries by 30%. Managed cross-functional coordination across vendors, clients, and operational teams for 450+ events while conducting user feedback analysis to improve customer experience and operational workflows.",
+  },
+  {
+    company: "Association for Computing Machinery",
     role: "Executive Director",
-    dates: "Aug 2023 – Present",
-    points: [
-      "Led ACM Create product strategy, reducing prototyping time 50%.",
-      "Managed 10-person agile team, improving velocity and sprint accuracy",
-      "Created viral Instagram content, generating 6M+ views and engagement.",
-    ],
+    dates: "January 2024 – May 2026",
+    description:
+      "Led strategic technology and community initiatives for a 60+ member organization, coordinating collaboration between engineering, design, and operations teams. Directed product planning and UX workflow initiatives using Figma while developing data-driven outreach strategies that generated 8M+ social media impressions and increased engagement across university initiatives.",
+  },
+  {
+    company: "HackUTA",
+    role: "Organizer",
+    dates: "August 2023 – May 2026",
+    description:
+      "Supported planning and execution of one of UTA’s largest hackathons by coordinating logistics, participant experiences, and cross-functional event operations. Collaborated with student leaders, sponsors, and volunteers to help deliver a large-scale technology event focused on innovation, collaboration, and hands-on learning.",
   },
 ];
 

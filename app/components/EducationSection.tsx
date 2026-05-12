@@ -6,7 +6,7 @@ const education = [
   {
     degree: 'Bachelor of Science in Computer Information Systems',
     school: 'University of Texas at Arlington',
-    period: 'Expected May 2026',
+    period: 'Graduated May 2026',
     gpa: '3.0/4.0',
     description: 'Focus on Product Management, Software Development, and Business Technology integration. Active in student organizations and hackathons.',
     achievements: ['Dean\'s List', 'ACM Executive Director', 'HackUTA Organizer']

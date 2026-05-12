@@ -18,12 +18,7 @@ export default function ProjectsGrid() {
       codeUrl: 'https://github.com/felixcherian/jurassic-parking',
       liveUrl: 'https://devpost.com/software/jurassic-parking'
     },
-    {
-      title: 'DecorFeva – In Progress',
-      description: 'An app uniting clients, decorators, and vendors to streamline wedding décor planning.',
-      tags: ['React', 'Next.js', 'Tailwind'],
-      // codeUrl: 'https://github.com/felixcherian/decorfeva'
-    }
+  
   ];
 
   return (

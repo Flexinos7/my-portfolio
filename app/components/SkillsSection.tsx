@@ -3,24 +3,48 @@
 import { motion } from 'framer-motion';
 
 const skills = [
-  { name: 'JavaScript', category: 'Languages' },
+  // Languages
   { name: 'Python', category: 'Languages' },
-  { name: 'HTML/CSS', category: 'Languages' },
+  { name: 'JavaScript', category: 'Languages' },
   { name: 'SQL', category: 'Languages' },
   { name: 'Swift', category: 'Languages' },
-  { name: 'React', category: 'Frameworks' },
-  { name: 'Next.js', category: 'Frameworks' },
-  { name: 'Node.js', category: 'Frameworks' },
-  { name: 'Tailwind CSS', category: 'Frameworks' },
-  { name: 'Agile', category: 'Developer Tools' },
-  { name: 'Jira', category: 'Developer Tools' },
-  { name: 'Git', category: 'Developer Tools' },
-  { name: 'VS Code', category: 'Developer Tools' },
-  { name: 'Figma', category: 'Developer Tools' },
-  { name: 'Firebase', category: 'Developer Tools' }
+  { name: 'HTML/CSS', category: 'Languages' },
+  { name: 'C/C++', category: 'Languages' },
+
+  // Frameworks & Libraries
+  { name: 'React', category: 'Frameworks & Libraries' },
+  { name: 'Next.js', category: 'Frameworks & Libraries' },
+  { name: 'Tailwind CSS', category: 'Frameworks & Libraries' },
+  { name: 'Node.js', category: 'Frameworks & Libraries' },
+  { name: 'Flutter', category: 'Frameworks & Libraries' },
+  { name: 'REST APIs', category: 'Frameworks & Libraries' },
+
+  // Databases & Cloud
+  { name: 'MySQL', category: 'Databases & Cloud' },
+  { name: 'SQLite', category: 'Databases & Cloud' },
+  { name: 'Firebase', category: 'Databases & Cloud' },
+  { name: 'Vercel', category: 'Databases & Cloud' },
+
+  // Business & Analytical Tools
+  { name: 'Agile Methodologies', category: 'Business & Analytical Tools' },
+  { name: 'Jira', category: 'Business & Analytical Tools' },
+  { name: 'Figma', category: 'Business & Analytical Tools' },
+  { name: 'Data Analysis', category: 'Business & Analytical Tools' },
+  { name: 'User Research', category: 'Business & Analytical Tools' },
+  { name: 'Process Mapping', category: 'Business & Analytical Tools' },
+
+  // Tools
+  { name: 'Git', category: 'Tools' },
+  { name: 'Visual Studio Code', category: 'Tools' },
 ];
 
-const categories = ['Languages', 'Frameworks', 'Developer Tools'];
+const categories = [
+  'Languages',
+  'Frameworks & Libraries',
+  'Databases & Cloud',
+  'Business & Analytical Tools',
+  'Tools',
+];
 
 export default function SkillsSection() {
   return (

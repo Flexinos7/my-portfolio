@@ -18,13 +18,7 @@ const projects = [
     github: "https://github.com/charlesroy7/RowdyHacks",
     live: "https://devpost.com/software/jurassic-parking",
   },
-  {
-    name: "DecorFeva - In Progress",
-    description: "An app uniting clients, decorators, and vendors to streamline wedding décor planning.",
-    tech: ["React", "Next.js", "Tailwind"],
-    github: null,
-    live: null,
-  },
+  
 ];
 
 export default function Projects() {

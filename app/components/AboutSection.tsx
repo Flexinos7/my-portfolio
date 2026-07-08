@@ -21,8 +21,8 @@ export default function AboutSection() {
   </p>
 
   <p>
-    I currently work as an Information Systems Analyst at Lockheed Martin, where I&apos;m continuing to grow in a technical business role while contributing to impactful, mission-driven work. Outside of work, you can usually find me at the gym, exploring new places, playing sports, or spending time with friends and family.
-  </p>
+  I recently accepted an offer to work as an Information Systems Analyst at Lockheed Martin, where I&apos;m excited to continue growing in a technical business role and contribute to impactful, mission-driven work. Outside of work, you can usually find me at the gym, exploring new places, playing sports, or spending time with friends and family.
+</p>
 </div>
           </div>
           <div className="flex justify-center lg:justify-end lg:pr-16">

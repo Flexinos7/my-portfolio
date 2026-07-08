@@ -8,7 +8,7 @@ const education = [
     school: 'University of Texas at Arlington',
     period: 'Graduated May 2026',
     gpa: '3.0/4.0',
-    description: 'Focus on Product Management, Software Development, and Business Technology integration. Active in student organizations and hackathons.',
+    description: 'Focus on Systems Analysis, Product Management, and Business Technology integration. Active in student organizations and hackathons.',
     achievements: ['Dean\'s List', 'ACM Executive Director', 'HackUTA Organizer']
   }
 ];

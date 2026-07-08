@@ -4,11 +4,11 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
-    title: 'Information Systems Analyst',
+    title: 'Incoming Information Systems Analyst',
     company: 'Lockheed Martin',
-    period: 'Start Date Pending',
+    period: '',
     description:
-      'Accepted offer to work as an Information Systems Analyst supporting technical publications authoring tools within Lockheed Martin Aeronautics. I help troubleshoot system issues, maintain tool functionality, support documentation workflows, and communicate with technical and non-technical teams to ensure reliable information systems operations in a mission-driven aerospace and defense environment.',
+      'Accepted an offer to work as an Information Systems Analyst within Lockheed Martin Aeronautics, where I plan to support technical publications authoring tools and information systems in a mission-driven aerospace and defense environment. In this role, I look forward to troubleshooting system issues, maintaining tool functionality, supporting documentation workflows, and communicating with technical and non-technical teams to help ensure reliable information systems operations.',
     skills: ['Technical Documentation', 'SQL', 'XML', 'Tableau', 'Java', 'C#',],
   },
   {

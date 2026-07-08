@@ -4,12 +4,28 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
+    title: 'Information Systems Analyst',
+    company: 'Lockheed Martin',
+    period: 'Start Date Pending',
+    description:
+      'Accepted offer to work as an Information Systems Analyst supporting technical publications authoring tools within Lockheed Martin Aeronautics. I help troubleshoot system issues, maintain tool functionality, support documentation workflows, and communicate with technical and non-technical teams to ensure reliable information systems operations in a mission-driven aerospace and defense environment.',
+    skills: ['Technical Documentation', 'SQL', 'XML', 'Tableau', 'Java', 'C#',],
+  },
+  {
     title: 'AI Evaluation Analyst (Contract)',
     company: 'Mercor',
     period: 'Aug 2025 – Jan 2026',
     description:
       'Evaluated and analyzed multimodal AI outputs across image, audio, and video datasets to assess model performance, alignment, and response accuracy against business-defined criteria while supporting AI model optimization initiatives.',
     skills: ['AI Evaluation', 'Data Analysis', 'Quality Assurance', 'Cross-Functional Collaboration'],
+  },
+  {
+    title: 'Business Systems Analyst',
+    company: 'Alpha Events & Decor',
+    period: 'Jan 2023 – August 2026',
+    description:
+      'Led digital transformation initiatives by coordinating development of an online wedding décor portal, collaborating with stakeholders to define business requirements and improve operational workflows across 450+ events.',
+    skills: ['Project Management', 'Stakeholder Communication', 'Process Improvement', 'Operations'],
   },
   {
     title: 'Organizer',
@@ -27,14 +43,7 @@ const experiences = [
       'Led strategic technology and community initiatives by coordinating collaboration between engineering, design, and operations teams while driving engagement through data-driven outreach strategies.',
     skills: ['Leadership', 'Product Strategy', 'Community Building', 'Cross-Functional Collaboration'],
   },
-  {
-    title: 'Event Planner',
-    company: 'Alpha Events & Decor',
-    period: 'Jan 2021 – May 2025',
-    description:
-      'Led digital transformation initiatives by coordinating development of an online wedding décor portal, collaborating with stakeholders to define business requirements and improve operational workflows across 450+ events.',
-    skills: ['Project Management', 'Stakeholder Communication', 'Process Improvement', 'Operations'],
-  },
+  
 ];
 
 

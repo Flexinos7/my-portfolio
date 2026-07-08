@@ -21,7 +21,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-xl md:text-2xl bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 text-transparent mb-4"
         >
-          Technology Consultant & Product Builder
+          Information Systems Analyst
         </motion.p>
         <motion.p
           initial={{ y: 20, opacity: 0 }}

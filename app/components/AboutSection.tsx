@@ -12,23 +12,18 @@ export default function AboutSection() {
               Delivering Meaningful Interactions
             </h2>
             <div className="prose prose-lg text-white space-y-4">
-              <p>
-                I&apos;m a passionate Digital Product Manager with a strong foundation in technology and user experience. 
-                My journey in the tech world has been driven by a desire to create meaningful solutions that address 
-                real user needs, especially ones that align with my passions.
-              </p>
-              <p>
-                With experience in both development and product thinking, I bridge the gap between technical 
-                implementation and user-centered design. I believe that the best products are built when we 
-                deeply understand the problems we&apos;re solving and the people we&apos;re solving them for.
-              </p>
-              <p>
-              When I&apos;m not working on projects, you can find me exploring new places,
-               going to the gym, playing sports, or going to social events. 
-               These type of adventures recharge me, which allow me to fuel ideas for my ideas to 
-               create products.
-              </p>
-            </div>
+  <p>
+    I&apos;m an Information Systems Analyst and product-minded technology professional with a strong foundation in business systems, user experience, and technical problem-solving. My work is driven by a passion for building solutions that connect people, processes, and technology in a meaningful way.
+  </p>
+
+  <p>
+    Through my experience in product management, business analysis, and software-focused projects, I&apos;ve developed a strong ability to translate business needs into clear requirements, collaborate with technical teams, and support systems that improve how organizations operate. I&apos;m especially interested in the intersection of technology, operations, and user-centered design.
+  </p>
+
+  <p>
+    I currently work as an Information Systems Analyst at Lockheed Martin, where I&apos;m continuing to grow in a technical business role while contributing to impactful, mission-driven work. Outside of work, you can usually find me at the gym, exploring new places, playing sports, or spending time with friends and family.
+  </p>
+</div>
           </div>
           <div className="flex justify-center lg:justify-end lg:pr-16">
             <motion.div

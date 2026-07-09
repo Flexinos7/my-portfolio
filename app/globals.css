@@ -27,13 +27,6 @@ body {
   border-color: var(--color-primary);
 }
 
-/* Ensure hero headings and icons are pure white and above overlays */
-.hero-title, .hero-icon {
-  color: #fff !important;
-  z-index: 30;
-  position: relative;
-}
-
 @layer base {
   :root {
     --background: 0 0% 100%;
